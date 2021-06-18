@@ -15,7 +15,10 @@
           @blur="handleBlur"
           @input="handleInput"
         ></el-input>
-        <el-button icon="el-icon-search"></el-button>
+        <el-button
+          icon="el-icon-search"
+          @click="search"
+        ></el-button>
       </div>
       <div
         class="hot-search"
@@ -67,6 +70,11 @@ export default {
       tool.getSearchList().then((res) => {
         this.searchList = res.list.filter((word) => word.includes(this.keywords));
       });
+    },
+    search() {
+      if (this.keywords) {
+        this.$router.push({ name: 'goodList', params: { name: this.keywords } });
+      }
     },
   },
   watch: {

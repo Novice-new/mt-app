@@ -1,0 +1,36 @@
+@import "./select.less";
+.category{
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 4px;
+  dl{
+    display: flex;
+    padding: 15px 20px 0 20px;
+    dt:first-of-type{
+      width: 80px;
+      height: 20px;
+    }
+    dt:nth-of-type(2){
+      padding: 0 10px;
+      height: 20px;
+      background: linear-gradient(to bottom right,#FFD000,#FFBD00);
+      border-radius: 10px;
+    }
+    .wrapper{
+      flex: 1 1 auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 20px;
+      margin-top: -3px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e5e5e5;
+      .wrapper:last-of-type{
+        border-bottom: none;
+      }
+    }
+  }
+}

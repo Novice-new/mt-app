@@ -1,0 +1,12 @@
+/* 样式重置 */
+@import url(./reset.css);
+@import url(./icon.css);
+
+body{
+  background-color: #f8f8f8;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}

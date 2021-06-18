@@ -1,0 +1,200 @@
+.topBar{
+  // background-color: red;
+  height: 40px;
+  width: 100%;
+  color: #666;
+  a{
+    color: #999;
+  }
+  .m-geo{
+    .position{
+      float: left;
+      .change-city{
+        color: #666;
+      }
+      a{
+        margin: 0 4px;
+        &:hover{
+          color: #fe8c00;
+        }
+      }
+      span{
+        cursor: pointer;
+        margin: 0 4px;
+        &:hover{
+          color: #FE8C00;
+        }
+      }
+    }
+    .user{
+      float: left;
+      margin-left: 15px;
+      a{
+        margin-left: 10px;
+        &:nth-child(1){
+          color: #FE8C00;
+        }
+        &:nth-child(2):hover{
+          color: #FE8C00;
+        }
+      }
+      span{
+        margin-left: 10px;
+        &:nth-child(1){
+          color: #FE8C00;
+        }
+        &:nth-child(2):hover{
+          color: #FE8C00;
+        }
+      }
+    }
+  }
+  .m-nav{
+    float: right;
+    li{
+      float: left;
+      width: 76px;
+      box-sizing: border-box;
+      text-align: center;
+      a:hover{
+        color: #FE8C00;
+      }
+      &.list{
+        border: 1px solid transparent;
+        border-top: none;
+        position: relative;
+        &:hover{
+          background-color: #fff;
+          border-color: #e5e5e5;
+          box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+          >dl{
+            display: block;
+          }
+          .subContainer{
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+        .subContainer{
+          display: none;
+        }
+        >dl {
+          background: #fff;
+          display: none;
+          position: absolute;
+          z-index: 999;
+          box-sizing: border-box;
+          box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+          dd {
+            line-height: 35px;
+            &:hover {
+              color: #FE8C00;
+            }
+          }
+        }
+      }
+      &.list.my,
+      &.list.role{
+        dl{
+          left: -1px;
+          width: 76px;
+          border: 1px solid #e5e5e5;
+          border-top: none;
+        }
+      }
+      &.list.business{
+        dl{
+          width: 110px;
+          border: 1px solid #e5e5e5;
+          right: -1px;
+          &:before {
+            content: " ";
+            display: block;
+            background: #fff;
+            height: 4px;
+            width: 76px;
+            position: absolute;
+            top: -1px;
+            right: 0;
+          }
+        }
+      }
+      &.list.site{
+        .subContainer{
+          box-sizing: border-box;
+          width: 1190px;
+          border: 1px solid #e5e5e5;
+          background-color: #fff;
+          position: absolute;
+          z-index: 999;
+          left: -1115px;
+          padding: 30px 36px 36px 47px;
+          box-shadow: 0 3px 5px 0 rgba(0,0,0,0.1);
+          &:before {
+            content: " ";
+            display: block;
+            background: #fff;
+            height: 4px;
+            width: 76px;
+            position: absolute;
+            top: -1px;
+            right: 0;
+          }
+          dl{
+            display: flex;
+            height: 100%;
+            dt{
+              width: 100%;
+              font-size: 14px;
+              color: #000;
+              margin-bottom: 10px;
+            }
+            dd{
+              height: 35px;
+            }
+          }
+          .hotel{
+            width: 20%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            dd{
+              width: 33%;
+            }
+          }
+          .food{
+            width: 15%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            dd{
+              width: 50%;
+              // background-color: red;
+            }
+          }
+          .movies{
+            width: 20%;
+            flex-wrap: wrap;
+            dd{
+              width: 100%;
+            }
+          }
+          .app{
+            width: 38%;
+            justify-content: center;
+            flex-wrap: wrap;
+            dt{
+              width: 100%;
+            }
+            dd{
+              width: 70px;
+              height: 70px;
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

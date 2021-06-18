@@ -1,0 +1,78 @@
+.product-card{
+  padding: 20px 0 16px 0;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  dt{
+    width: 220px;
+    img{
+      width: 100%;
+      height: 125px;
+    }
+  }
+  dd{
+    flex: 1 1 auto;
+    padding-left: 20px;
+    line-height: 20px;
+    h3{
+      a{
+        color: #333;
+        line-height: 20px;
+      }
+    }
+    p{
+      margin-top: 6px;
+    }
+    p:nth-of-type(1){
+      display: flex;
+      .el-rate{
+        margin-right: 10px;
+      }
+      >span{
+        margin-right: 10px;
+        font-size: 12px;
+        color: #666;
+        &.comment-total{
+          color: #ff9900;
+        }
+      }
+    }
+    p:nth-of-type(2){
+      font-size: 12px;
+      color: #666;
+      >span{
+        margin-right: 10px;
+        &:last-of-type a{
+          i{
+            color: #FFC200;
+          }
+          color: #222;
+        }
+      }
+    }
+    p:nth-of-type(3){
+      color: #666;
+      font-size: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #e5e5e5;
+    }
+    .deal-items{
+      padding-top: 10px;
+      li{
+        padding: 6px 10px 8px 10px;
+        cursor: pointer;
+        &:hover{
+          background-color: #F8F8F8;
+          border-radius: 4px;
+        }
+        .deal-title{
+          font-size: 14px;
+          color: #666;
+        }
+        .deal-price{
+          font-size: 15px;
+          color: #ff6600;
+        }
+      }
+    }
+  }
+}

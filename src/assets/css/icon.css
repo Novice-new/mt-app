@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2596033 */
+  src: url('http://at.alicdn.com/t/font_2596033_b26zlyg969h.woff2?t=1623938837693') format('woff2'),
+       url('http://at.alicdn.com/t/font_2596033_b26zlyg969h.woff?t=1623938837693') format('woff'),
+       url('http://at.alicdn.com/t/font_2596033_b26zlyg969h.ttf?t=1623938837693') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-weibo:before {
+  content: "\e630";
+}
+
+.icon-qq:before {
+  content: "\e618";
+}
+
+.icon-arrow:before {
+  content: "\e601";
+}
+
+.icon-homestay:before {
+  content: "\e65e";
+  color: #FFB500;
+}
+
+.icon-beauty:before {
+  content: "\e606";
+  color: #FF4081;
+}
+
+.icon-entertainment:before {
+  content: "\e607";
+  color: #00BF96;
+}
+
+.icon-offspring:before {
+  content: "\e610";
+  color: #FF4081;
+}
+
+.icon-service:before {
+  content: "\ea41";
+  color: #00BF96;
+}
+
+.icon-study:before {
+  content: "\e600";
+  color: #00BF96;
+}
+
+.icon-decoration:before {
+  content: "\e635";
+  color: #00BF96;
+}
+
+.icon-movie:before {
+  content: "\e67e";
+  color: #FF3D00;
+}
+.icon-medical:before {
+  content: "\e669";
+  color: #03A9F4;
+}
+
+.icon-marry:before {
+  content: "\e65f";
+  color: #FF4081;
+}
+
+.icon-hotel:before {
+  content: "\e674";
+  color: #9B5E3E;
+}
+
+.icon-ticket:before {
+  content: "\e622";
+  color: #03A9F4;
+}
+
+.icon-fitness:before {
+  content: "\e666";
+  color: #03A9F4;
+}
+
+.icon-food:before {
+  content: "\e8c6";
+  color: #FF8200;
+}
+
+.icon-bar:before {
+  content: "\e6c3";
+  color: #00BF96;
+}
+
+.icon-takeout:before {
+  content: "\e8c9";
+  color: #FFB500;
+}
+
+.icon-search:before {
+  content: "\e7d2";
+}

@@ -1,0 +1,78 @@
+@import "./select.less";
+.province{
+  display: flex;
+  align-items: center;
+  .select-wrapper{
+    margin: 0 10px 0 20px;
+  }
+  .search{
+    margin-left: 40px;
+    position: relative;
+    input{
+      border: 1px solid #e5e5e5;
+      outline: none;
+      padding-left: 10px;
+      margin-left: 10px;
+      line-height: 40px;
+      font-size: 14px;
+      border-radius: 4px;
+      width: 220px;
+      color: #666;
+      box-sizing: border-box;
+    }
+    >.suggest-city-wrapper{
+      background-color: #fff;
+      border-radius: 4px;
+      border: 1px solid #e5e5e5;
+      box-shadow: 0 3px 5px 0 rgba(0,0,0,0.10);
+      position: absolute;
+      left: 90px;
+      top: 50px;
+      z-index: 2;
+      // position: relative;
+      &::before{
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 26px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #fff;
+        z-index: 99;
+        border-top: 0;
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: 26px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #e5e5e5;
+        border-top: 0;
+        z-index: 98;
+      }
+      .suggest-city-list{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        padding-left: 15px;
+        padding-right: 20px;
+        min-width: 150px;
+        max-height: 375px;
+        span{
+          cursor: pointer;
+          height: 20px;
+          line-height: 20px;
+          font-size: 12px;
+          padding: 1px 8px;
+          margin: 6px 38px 6px 0;
+          color: #666;
+          &:hover{
+            color: #222;
+          }
+        }
+      }
+    }
+  }
+}

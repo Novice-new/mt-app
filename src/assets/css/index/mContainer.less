@@ -1,0 +1,122 @@
+.m-container{
+  margin-top: 40px;
+  background-color: #fff;
+  width: 100%;
+  dl{
+    &.istyle{
+      background-color: #F2BE47;
+    }
+    &.sale{
+      background-color: #51B3D8;
+    }
+    display: flex;
+    height: 44px;
+    line-height: 44px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #fff;
+    dt{
+      font-size: 18px;
+      margin: 0 13px;
+      padding: 0 5px;
+    }
+    dd{
+      position: relative;
+      cursor: pointer;
+      padding: 0 5px;
+      &::after{
+        content: "";
+        display: none;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+        width: 2px;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 7px solid #fff;
+        position: absolute;
+        z-index: 999;
+      }
+      &.active::after{
+        display: block;
+      }
+    }
+  }
+  .m-body{
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    ul{
+      width: 1152px;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        cursor: pointer;
+        width: 370px;
+        margin:0 7px;
+        .el-card{
+          box-shadow: none;
+          border: none;
+          .card-header{
+            width: 100%;
+            position: relative;
+            margin-bottom: 11px;
+            .image{
+              width: 100%;
+              height: 208px;
+            }
+            .logo{
+              position: absolute;
+              right: 15px;
+              bottom: -22px;
+              width: 52px;
+              height: 52px;
+              box-sizing: border-box;
+              border: 2px solid #fff;
+              border-radius: 50%;
+            }
+          }
+          .card-body{
+            width: 100%;
+            .title{
+              font-size: 16px;
+              line-height: 20px;
+              color: #222;
+              margin: 7px 0;
+            }
+            .sub{
+              font-size: 12px;
+              color: #999;
+            }
+          }
+          .card-footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 25px;
+            .price{
+              margin-top: 6px;
+              padding: 4px 0;
+              font-size: 20px;
+              color: #ff6600;
+            }
+            .address{
+              color: #999;
+              font-size: 12px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

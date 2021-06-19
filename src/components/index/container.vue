@@ -19,6 +19,7 @@
         <li
           v-for="(item,index) in results[type]"
           :key="index"
+          @click="handleClick(item.title)"
         >
           <el-card :body-style="{ padding: '0px' }">
             <div class="card-header">
@@ -72,6 +73,9 @@ export default {
       if (target.nodeName === 'DD') {
         this.type = target.getAttribute('data-type');
       }
+    },
+    handleClick(title) {
+      this.$router.push({ name: 'goodList', params: { name: title } });
     },
   },
 };

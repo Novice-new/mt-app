@@ -22,7 +22,7 @@
       </div>
       <div
         class="hot-search"
-        v-show="isFocus && !keywords"
+        v-show="isFocus && keywords === ''"
       >
         <dt>热词搜索</dt>
         <dd
@@ -34,7 +34,7 @@
       </div>
       <div
         class="search-list"
-        v-show="keywords !== ''"
+        v-show="keywords !== '' && isFocus"
       >
         <dl>
           <dd
@@ -80,7 +80,6 @@ export default {
   watch: {
     '$route.params.name': function () {
       this.keywords = this.$route.params.name;
-      this.isFocus = false;
     },
   },
   created() {
